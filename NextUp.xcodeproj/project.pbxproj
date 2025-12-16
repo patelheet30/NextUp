@@ -10,9 +10,8 @@
 		01F4C3D22EF1D74F00D9B646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C3D12EF1D74F00D9B646 /* AppDelegate.swift */; };
 		01F4C3D42EF1D74F00D9B646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C3D32EF1D74F00D9B646 /* SceneDelegate.swift */; };
 		01F4C3DB2EF1D75200D9B646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F4C3DA2EF1D75200D9B646 /* Assets.xcassets */; };
-		01F4C4162EF1ED1300D9B646 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 01F4C4152EF1ED1300D9B646 /* GRDB */; };
-		01F4C4182EF1ED1300D9B646 /* GRDB-dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 01F4C4172EF1ED1300D9B646 /* GRDB-dynamic */; };
 		01F4C41B2EF1ED7000D9B646 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 01F4C41A2EF1ED7000D9B646 /* Kingfisher */; };
+		01F4C4462EF2238300D9B646 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 01F4C4452EF2238300D9B646 /* GRDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +41,23 @@
 		01F4C3EE2EF1D75200D9B646 /* NextUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F4C41C2EF1ED7900D9B646 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		01F4C4292EF1FB2900D9B646 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		01F4C42A2EF2015900D9B646 /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
+		01F4C42B2EF203E300D9B646 /* WatchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchStatus.swift; sourceTree = "<group>"; };
+		01F4C42C2EF2040E00D9B646 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		01F4C42D2EF2063300D9B646 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		01F4C42E2EF207B500D9B646 /* TVShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShow.swift; sourceTree = "<group>"; };
+		01F4C42F2EF2088900D9B646 /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		01F4C4302EF2091700D9B646 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		01F4C4312EF20A0400D9B646 /* WatchingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingItem.swift; sourceTree = "<group>"; };
+		01F4C4322EF20BB800D9B646 /* QueueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueItem.swift; sourceTree = "<group>"; };
+		01F4C4332EF20BF100D9B646 /* UpcomingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingItem.swift; sourceTree = "<group>"; };
+		01F4C43F2EF20FD600D9B646 /* DatabaseManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManagerProtocol.swift; sourceTree = "<group>"; };
+		01F4C4422EF2121800D9B646 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		01F4C4502EF223E300D9B646 /* MovieRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryProtocol.swift; sourceTree = "<group>"; };
+		01F4C4512EF2241600D9B646 /* TVShowRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowRepositoryProtocol.swift; sourceTree = "<group>"; };
+		01F4C4522EF2243100D9B646 /* WatchingRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingRepositoryProtocol.swift; sourceTree = "<group>"; };
+		01F4C4532EF2244F00D9B646 /* QueueRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueRepositoryProtocol.swift; sourceTree = "<group>"; };
+		01F4C4542EF2247600D9B646 /* UpcomingRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingRepositoryProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -68,8 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01F4C41B2EF1ED7000D9B646 /* Kingfisher in Frameworks */,
-				01F4C4162EF1ED1300D9B646 /* GRDB in Frameworks */,
-				01F4C4182EF1ED1300D9B646 /* GRDB-dynamic in Frameworks */,
+				01F4C4462EF2238300D9B646 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +190,8 @@
 		01F4C4082EF1D97800D9B646 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				01F4C4422EF2121800D9B646 /* DatabaseManager.swift */,
+				01F4C43F2EF20FD600D9B646 /* DatabaseManagerProtocol.swift */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -189,6 +206,11 @@
 		01F4C40B2EF1D98500D9B646 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				01F4C4542EF2247600D9B646 /* UpcomingRepositoryProtocol.swift */,
+				01F4C4532EF2244F00D9B646 /* QueueRepositoryProtocol.swift */,
+				01F4C4522EF2243100D9B646 /* WatchingRepositoryProtocol.swift */,
+				01F4C4512EF2241600D9B646 /* TVShowRepositoryProtocol.swift */,
+				01F4C4502EF223E300D9B646 /* MovieRepositoryProtocol.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -196,6 +218,16 @@
 		01F4C40C2EF1D98D00D9B646 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				01F4C4332EF20BF100D9B646 /* UpcomingItem.swift */,
+				01F4C4322EF20BB800D9B646 /* QueueItem.swift */,
+				01F4C4312EF20A0400D9B646 /* WatchingItem.swift */,
+				01F4C4302EF2091700D9B646 /* Episode.swift */,
+				01F4C42F2EF2088900D9B646 /* Season.swift */,
+				01F4C42E2EF207B500D9B646 /* TVShow.swift */,
+				01F4C42D2EF2063300D9B646 /* Movie.swift */,
+				01F4C42C2EF2040E00D9B646 /* Genre.swift */,
+				01F4C42B2EF203E300D9B646 /* WatchStatus.swift */,
+				01F4C42A2EF2015900D9B646 /* MediaType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -264,9 +296,8 @@
 			);
 			name = NextUp;
 			packageProductDependencies = (
-				01F4C4152EF1ED1300D9B646 /* GRDB */,
-				01F4C4172EF1ED1300D9B646 /* GRDB-dynamic */,
 				01F4C41A2EF1ED7000D9B646 /* Kingfisher */,
+				01F4C4452EF2238300D9B646 /* GRDB */,
 			);
 			productName = NextUp;
 			productReference = 01F4C3CE2EF1D74F00D9B646 /* NextUp.app */;
@@ -351,8 +382,8 @@
 			mainGroup = 01F4C3C52EF1D74F00D9B646;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */,
 				01F4C4192EF1ED7000D9B646 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				01F4C4442EF2238300D9B646 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 01F4C3CF2EF1D74F00D9B646 /* Products */;
@@ -742,14 +773,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/groue/GRDB.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 7.0.0;
-			};
-		};
 		01F4C4192EF1ED7000D9B646 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
@@ -758,23 +781,26 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		01F4C4442EF2238300D9B646 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		01F4C4152EF1ED1300D9B646 /* GRDB */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */;
-			productName = GRDB;
-		};
-		01F4C4172EF1ED1300D9B646 /* GRDB-dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */;
-			productName = "GRDB-dynamic";
-		};
 		01F4C41A2EF1ED7000D9B646 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 01F4C4192EF1ED7000D9B646 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		01F4C4452EF2238300D9B646 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01F4C4442EF2238300D9B646 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
