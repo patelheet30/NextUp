@@ -6,8 +6,10 @@
 //
 
 import CoreFoundation
+import Foundation
 
 struct AppConfiguration {
+    // MARK: API Configuration
     struct API {
         static let baseURL = "https://api.themoviedb.org/3/"
         static let apiKey = "..."
@@ -28,17 +30,20 @@ struct AppConfiguration {
         
     }
     
+    // MARK: Database Configuration
     struct Database {
         static let name = "nextupstore"
         static let schemaVersion: Int = 1
     }
     
+    // MARK: Cache Configuration
     struct Cache {
         static let memoryCacheLimit: Int = 150
         static let diskCacheLimit: Int = 500
         static let cacheExpiryDays: TimeInterval = 60 * 60 * 24 * 7
     }
     
+    // MARK: UI Configuration
     struct UI {
         static let cornerRadius: CGFloat = 16
         static let stackOffset: CGFloat = 8
