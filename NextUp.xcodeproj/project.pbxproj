@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		01F4C3D22EF1D74F00D9B646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C3D12EF1D74F00D9B646 /* AppDelegate.swift */; };
+		01F4C3D42EF1D74F00D9B646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C3D32EF1D74F00D9B646 /* SceneDelegate.swift */; };
+		01F4C3DB2EF1D75200D9B646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F4C3DA2EF1D75200D9B646 /* Assets.xcassets */; };
+		01F4C4162EF1ED1300D9B646 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 01F4C4152EF1ED1300D9B646 /* GRDB */; };
+		01F4C4182EF1ED1300D9B646 /* GRDB-dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 01F4C4172EF1ED1300D9B646 /* GRDB-dynamic */; };
+		01F4C41B2EF1ED7000D9B646 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 01F4C41A2EF1ED7000D9B646 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		01F4C3E52EF1D75200D9B646 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -25,26 +34,19 @@
 
 /* Begin PBXFileReference section */
 		01F4C3CE2EF1D74F00D9B646 /* NextUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F4C3D12EF1D74F00D9B646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01F4C3D32EF1D74F00D9B646 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		01F4C3DA2EF1D75200D9B646 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01F4C3DF2EF1D75200D9B646 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01F4C3E42EF1D75200D9B646 /* NextUpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextUpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F4C3EE2EF1D75200D9B646 /* NextUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		01F4C41C2EF1ED7900D9B646 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
+		01F4C4292EF1FB2900D9B646 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		01F4C3F62EF1D75200D9B646 /* Exceptions for "NextUp" folder in "NextUp" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 01F4C3CD2EF1D74F00D9B646 /* NextUp */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		01F4C3D02EF1D74F00D9B646 /* NextUp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				01F4C3F62EF1D75200D9B646 /* Exceptions for "NextUp" folder in "NextUp" target */,
-			);
 			path = NextUp;
 			sourceTree = "<group>";
 		};
@@ -65,6 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F4C41B2EF1ED7000D9B646 /* Kingfisher in Frameworks */,
+				01F4C4162EF1ED1300D9B646 /* GRDB in Frameworks */,
+				01F4C4182EF1ED1300D9B646 /* GRDB-dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,12 @@
 		01F4C3C52EF1D74F00D9B646 = {
 			isa = PBXGroup;
 			children = (
+				01F4C4072EF1D94D00D9B646 /* Resources */,
+				01F4C4062EF1D94500D9B646 /* Infrastructure */,
+				01F4C4052EF1D94000D9B646 /* Presentation */,
+				01F4C4042EF1D93B00D9B646 /* Domain */,
+				01F4C4032EF1D93700D9B646 /* Data */,
+				01F4C4022EF1D91E00D9B646 /* App */,
 				01F4C3D02EF1D74F00D9B646 /* NextUp */,
 				01F4C3E72EF1D75200D9B646 /* NextUpTests */,
 				01F4C3F12EF1D75200D9B646 /* NextUpUITests */,
@@ -103,6 +114,134 @@
 				01F4C3EE2EF1D75200D9B646 /* NextUpUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		01F4C4022EF1D91E00D9B646 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				01F4C3D12EF1D74F00D9B646 /* AppDelegate.swift */,
+				01F4C3D32EF1D74F00D9B646 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		01F4C4032EF1D93700D9B646 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				01F4C40C2EF1D98D00D9B646 /* Models */,
+				01F4C40B2EF1D98500D9B646 /* Repositories */,
+				01F4C4092EF1D97E00D9B646 /* Network */,
+				01F4C4082EF1D97800D9B646 /* Database */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		01F4C4042EF1D93B00D9B646 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				01F4C40F2EF1D9A200D9B646 /* UseCases */,
+				01F4C40E2EF1D99C00D9B646 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		01F4C4052EF1D94000D9B646 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				01F4C4122EF1D9B600D9B646 /* Common */,
+				01F4C4112EF1D9B000D9B646 /* Components */,
+				01F4C4102EF1D9AB00D9B646 /* Screens */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		01F4C4062EF1D94500D9B646 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				01F4C4132EF1D9BB00D9B646 /* DependencyInjection */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		01F4C4072EF1D94D00D9B646 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01F4C3DF2EF1D75200D9B646 /* Info.plist */,
+				01F4C3DA2EF1D75200D9B646 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		01F4C4082EF1D97800D9B646 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		01F4C4092EF1D97E00D9B646 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		01F4C40B2EF1D98500D9B646 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		01F4C40C2EF1D98D00D9B646 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		01F4C40E2EF1D99C00D9B646 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		01F4C40F2EF1D9A200D9B646 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		01F4C4102EF1D9AB00D9B646 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		01F4C4112EF1D9B000D9B646 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		01F4C4122EF1D9B600D9B646 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		01F4C4132EF1D9BB00D9B646 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				01F4C4292EF1FB2900D9B646 /* DependencyContainer.swift */,
+				01F4C41C2EF1ED7900D9B646 /* AppConfiguration.swift */,
+			);
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +264,9 @@
 			);
 			name = NextUp;
 			packageProductDependencies = (
+				01F4C4152EF1ED1300D9B646 /* GRDB */,
+				01F4C4172EF1ED1300D9B646 /* GRDB-dynamic */,
+				01F4C41A2EF1ED7000D9B646 /* Kingfisher */,
 			);
 			productName = NextUp;
 			productReference = 01F4C3CE2EF1D74F00D9B646 /* NextUp.app */;
@@ -208,6 +350,10 @@
 			);
 			mainGroup = 01F4C3C52EF1D74F00D9B646;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */,
+				01F4C4192EF1ED7000D9B646 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 01F4C3CF2EF1D74F00D9B646 /* Products */;
 			projectDirPath = "";
@@ -225,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F4C3DB2EF1D75200D9B646 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F4C3D22EF1D74F00D9B646 /* AppDelegate.swift in Sources */,
+				01F4C3D42EF1D74F00D9B646 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,6 +740,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		01F4C4192EF1ED7000D9B646 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01F4C4152EF1ED1300D9B646 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+		01F4C4172EF1ED1300D9B646 /* GRDB-dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01F4C4142EF1ED1300D9B646 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = "GRDB-dynamic";
+		};
+		01F4C41A2EF1ED7000D9B646 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 01F4C4192EF1ED7000D9B646 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01F4C3C62EF1D74F00D9B646 /* Project object */;
 }
