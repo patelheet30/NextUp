@@ -7,6 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01E0AF292EF3265200847FFA /* TestBlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0AF282EF3221100847FFA /* TestBlockViewController.swift */; };
+		01E0AF2A2EF3273C00847FFA /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C46F2EF2E15600D9B646 /* BlockView.swift */; };
+		01E0AF2B2EF3274300847FFA /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0AF272EF2F94A00847FFA /* ProgressBarView.swift */; };
+		01E0AF2C2EF327B500847FFA /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C41C2EF1ED7900D9B646 /* AppConfiguration.swift */; };
+		01E0AF2D2EF327B500847FFA /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4292EF1FB2900D9B646 /* DependencyContainer.swift */; };
+		01E0AF2E2EF327E200847FFA /* UpcomingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4332EF20BF100D9B646 /* UpcomingItem.swift */; };
+		01E0AF2F2EF327E200847FFA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C42D2EF2063300D9B646 /* Movie.swift */; };
+		01E0AF302EF327E200847FFA /* WatchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C42B2EF203E300D9B646 /* WatchStatus.swift */; };
+		01E0AF312EF327E200847FFA /* TVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C42E2EF207B500D9B646 /* TVShow.swift */; };
+		01E0AF322EF327E200847FFA /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C42A2EF2015900D9B646 /* MediaType.swift */; };
+		01E0AF332EF327E200847FFA /* QueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4322EF20BB800D9B646 /* QueueItem.swift */; };
+		01E0AF342EF327E200847FFA /* WatchingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4312EF20A0400D9B646 /* WatchingItem.swift */; };
+		01E0AF352EF327E200847FFA /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C42C2EF2040E00D9B646 /* Genre.swift */; };
+		01E0AF362EF327E200847FFA /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C42F2EF2088900D9B646 /* Season.swift */; };
+		01E0AF372EF327E200847FFA /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4302EF2091700D9B646 /* Episode.swift */; };
+		01E0AF382EF327E900847FFA /* UpcomingRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4542EF2247600D9B646 /* UpcomingRepositoryProtocol.swift */; };
+		01E0AF392EF327E900847FFA /* WatchingRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4522EF2243100D9B646 /* WatchingRepositoryProtocol.swift */; };
+		01E0AF3A2EF327E900847FFA /* MovieRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4502EF223E300D9B646 /* MovieRepositoryProtocol.swift */; };
+		01E0AF3B2EF327E900847FFA /* TVShowRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4512EF2241600D9B646 /* TVShowRepositoryProtocol.swift */; };
+		01E0AF3C2EF327E900847FFA /* QueueRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4532EF2244F00D9B646 /* QueueRepositoryProtocol.swift */; };
+		01E0AF3D2EF327EF00847FFA /* TMDBProductionCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4572EF22A0900D9B646 /* TMDBProductionCountry.swift */; };
+		01E0AF3E2EF327EF00847FFA /* TMDBServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4692EF2308100D9B646 /* TMDBServiceProtocol.swift */; };
+		01E0AF3F2EF327EF00847FFA /* TMDBNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4582EF22AB400D9B646 /* TMDBNetwork.swift */; };
+		01E0AF402EF327EF00847FFA /* TMDBImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C46C2EF2CF9E00D9B646 /* TMDBImageService.swift */; };
+		01E0AF412EF327EF00847FFA /* TMDBSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4592EF22AC100D9B646 /* TMDBSearchResponse.swift */; };
+		01E0AF422EF327EF00847FFA /* TMDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C46A2EF231BD00D9B646 /* TMDBService.swift */; };
+		01E0AF432EF327EF00847FFA /* TMDBSeason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4672EF22F4C00D9B646 /* TMDBSeason.swift */; };
+		01E0AF442EF327EF00847FFA /* TMDBSearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4682EF22F7100D9B646 /* TMDBSearchResult.swift */; };
+		01E0AF452EF327EF00847FFA /* TMDBError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C46B2EF2334800D9B646 /* TMDBError.swift */; };
+		01E0AF462EF327EF00847FFA /* TMDBTVShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4642EF22EFB00D9B646 /* TMDBTVShow.swift */; };
+		01E0AF472EF327EF00847FFA /* TMDBGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4562EF2292600D9B646 /* TMDBGenre.swift */; };
+		01E0AF482EF327EF00847FFA /* TMDBEpisode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4652EF22F2D00D9B646 /* TMDBEpisode.swift */; };
+		01E0AF492EF327EF00847FFA /* TMDBMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4552EF2283400D9B646 /* TMDBMovie.swift */; };
+		01E0AF4A2EF327F700847FFA /* DatabaseManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C43F2EF20FD600D9B646 /* DatabaseManagerProtocol.swift */; };
+		01E0AF4B2EF327F700847FFA /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C4422EF2121800D9B646 /* DatabaseManager.swift */; };
+		01E0AF4D2EF35B3200847FFA /* WatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0AF4C2EF35B3200847FFA /* WatchingViewController.swift */; };
+		01E0AF4F2EF3634100847FFA /* WatchingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E0AF4E2EF3634100847FFA /* WatchingCell.swift */; };
 		01F4C3D22EF1D74F00D9B646 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C3D12EF1D74F00D9B646 /* AppDelegate.swift */; };
 		01F4C3D42EF1D74F00D9B646 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F4C3D32EF1D74F00D9B646 /* SceneDelegate.swift */; };
 		01F4C3DB2EF1D75200D9B646 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F4C3DA2EF1D75200D9B646 /* Assets.xcassets */; };
@@ -32,6 +69,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01E0AF272EF2F94A00847FFA /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		01E0AF282EF3221100847FFA /* TestBlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBlockViewController.swift; sourceTree = "<group>"; };
+		01E0AF4C2EF35B3200847FFA /* WatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingViewController.swift; sourceTree = "<group>"; };
+		01E0AF4E2EF3634100847FFA /* WatchingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingCell.swift; sourceTree = "<group>"; };
 		01F4C3CE2EF1D74F00D9B646 /* NextUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F4C3D12EF1D74F00D9B646 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F4C3D32EF1D74F00D9B646 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +112,7 @@
 		01F4C46A2EF231BD00D9B646 /* TMDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBService.swift; sourceTree = "<group>"; };
 		01F4C46B2EF2334800D9B646 /* TMDBError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBError.swift; sourceTree = "<group>"; };
 		01F4C46C2EF2CF9E00D9B646 /* TMDBImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBImageService.swift; sourceTree = "<group>"; };
+		01F4C46F2EF2E15600D9B646 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -275,6 +317,9 @@
 		01F4C4102EF1D9AB00D9B646 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				01E0AF282EF3221100847FFA /* TestBlockViewController.swift */,
+				01E0AF4C2EF35B3200847FFA /* WatchingViewController.swift */,
+				01E0AF4E2EF3634100847FFA /* WatchingCell.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -282,6 +327,8 @@
 		01F4C4112EF1D9B000D9B646 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				01E0AF272EF2F94A00847FFA /* ProgressBarView.swift */,
+				01F4C46F2EF2E15600D9B646 /* BlockView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -453,7 +500,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01E0AF2B2EF3274300847FFA /* ProgressBarView.swift in Sources */,
+				01E0AF2E2EF327E200847FFA /* UpcomingItem.swift in Sources */,
+				01E0AF382EF327E900847FFA /* UpcomingRepositoryProtocol.swift in Sources */,
+				01E0AF392EF327E900847FFA /* WatchingRepositoryProtocol.swift in Sources */,
+				01E0AF3A2EF327E900847FFA /* MovieRepositoryProtocol.swift in Sources */,
+				01E0AF3B2EF327E900847FFA /* TVShowRepositoryProtocol.swift in Sources */,
+				01E0AF3C2EF327E900847FFA /* QueueRepositoryProtocol.swift in Sources */,
+				01E0AF2F2EF327E200847FFA /* Movie.swift in Sources */,
+				01E0AF3D2EF327EF00847FFA /* TMDBProductionCountry.swift in Sources */,
+				01E0AF3E2EF327EF00847FFA /* TMDBServiceProtocol.swift in Sources */,
+				01E0AF3F2EF327EF00847FFA /* TMDBNetwork.swift in Sources */,
+				01E0AF402EF327EF00847FFA /* TMDBImageService.swift in Sources */,
+				01E0AF412EF327EF00847FFA /* TMDBSearchResponse.swift in Sources */,
+				01E0AF422EF327EF00847FFA /* TMDBService.swift in Sources */,
+				01E0AF4A2EF327F700847FFA /* DatabaseManagerProtocol.swift in Sources */,
+				01E0AF4B2EF327F700847FFA /* DatabaseManager.swift in Sources */,
+				01E0AF432EF327EF00847FFA /* TMDBSeason.swift in Sources */,
+				01E0AF442EF327EF00847FFA /* TMDBSearchResult.swift in Sources */,
+				01E0AF452EF327EF00847FFA /* TMDBError.swift in Sources */,
+				01E0AF462EF327EF00847FFA /* TMDBTVShow.swift in Sources */,
+				01E0AF472EF327EF00847FFA /* TMDBGenre.swift in Sources */,
+				01E0AF482EF327EF00847FFA /* TMDBEpisode.swift in Sources */,
+				01E0AF492EF327EF00847FFA /* TMDBMovie.swift in Sources */,
+				01E0AF302EF327E200847FFA /* WatchStatus.swift in Sources */,
+				01E0AF312EF327E200847FFA /* TVShow.swift in Sources */,
+				01E0AF322EF327E200847FFA /* MediaType.swift in Sources */,
+				01E0AF332EF327E200847FFA /* QueueItem.swift in Sources */,
+				01E0AF342EF327E200847FFA /* WatchingItem.swift in Sources */,
+				01E0AF4F2EF3634100847FFA /* WatchingCell.swift in Sources */,
+				01E0AF352EF327E200847FFA /* Genre.swift in Sources */,
+				01E0AF362EF327E200847FFA /* Season.swift in Sources */,
+				01E0AF372EF327E200847FFA /* Episode.swift in Sources */,
+				01E0AF2C2EF327B500847FFA /* AppConfiguration.swift in Sources */,
+				01E0AF2D2EF327B500847FFA /* DependencyContainer.swift in Sources */,
+				01E0AF2A2EF3273C00847FFA /* BlockView.swift in Sources */,
 				01F4C3D22EF1D74F00D9B646 /* AppDelegate.swift in Sources */,
+				01E0AF4D2EF35B3200847FFA /* WatchingViewController.swift in Sources */,
+				01E0AF292EF3265200847FFA /* TestBlockViewController.swift in Sources */,
 				01F4C3D42EF1D74F00D9B646 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,10 +581,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XS64NY3897;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NextUp/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -529,10 +612,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = XS64NY3897;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = NextUp/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
