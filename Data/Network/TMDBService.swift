@@ -12,6 +12,7 @@ class TMDBService: TMDBServiceProtocol {
     private let decoder: JSONDecoder
     private let baseURL: String
     private let apiKey: String
+    private let dateFormatter: DateFormatter
     
     // MARK: Initialise TMDBService
     init() {
@@ -24,8 +25,8 @@ class TMDBService: TMDBServiceProtocol {
         dateFormatter.dateFormat = "yyyy-MM-dd"
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
         
-        self.baseURL = AppConfiguration.api.baseURL
-        self.apiKey = AppConfiguration.api.apiKey
+        self.baseURL = AppConfiguration.API.baseURL
+        self.apiKey = AppConfiguration.API.apiKey
     }
     
     // MARK: Private helper methods
@@ -69,7 +70,7 @@ class TMDBService: TMDBServiceProtocol {
         }
         
         do {
-            let decodedResponse = try decoder.decode(T.self, from: data)
+            let decodedResponse = try decoder.decode(T.self, from: date)
             return decodedResponse
         } catch {
             throw TMDBError.decodingError(error)
@@ -80,7 +81,7 @@ class TMDBService: TMDBServiceProtocol {
     func searchMulti(query: String, page: Int) async throws -> TMDBSearchResponse<TMDBSearchResult> {
         let endpoint = "search/multi"
         let queryItems = [
-            URLQueryItem(name: "query", value: query)
+            URLQueryItem(name: "query", value: query),
             URLQueryItem(name: "page", value: String(page))
         ]
         return try await performRequest(endpoint: endpoint, queryItems: queryItems)
