@@ -70,6 +70,7 @@
 		01F4C4692EF2308100D9B646 /* TMDBServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBServiceProtocol.swift; sourceTree = "<group>"; };
 		01F4C46A2EF231BD00D9B646 /* TMDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBService.swift; sourceTree = "<group>"; };
 		01F4C46B2EF2334800D9B646 /* TMDBError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBError.swift; sourceTree = "<group>"; };
+		01F4C46C2EF2CF9E00D9B646 /* TMDBImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBImageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -211,6 +212,7 @@
 		01F4C4092EF1D97E00D9B646 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				01F4C46C2EF2CF9E00D9B646 /* TMDBImageService.swift */,
 				01F4C46B2EF2334800D9B646 /* TMDBError.swift */,
 				01F4C46A2EF231BD00D9B646 /* TMDBService.swift */,
 				01F4C4692EF2308100D9B646 /* TMDBServiceProtocol.swift */,

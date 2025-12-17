@@ -8,6 +8,14 @@
 class DependencyContainer {
     static let shared = DependencyContainer()
     
+    lazy var tmdbService: TMDBServiceProtocol = {
+        return TMDBService()
+    }
+    
+    lazy var imageService: TMDBImageService = {
+        return TMDBImageService()
+    }
+    
     private init() {
         
     }
