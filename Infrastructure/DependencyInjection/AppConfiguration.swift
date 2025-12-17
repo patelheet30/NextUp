@@ -48,7 +48,7 @@ struct AppConfiguration {
         static let cornerRadius: CGFloat = 16
         static let stackOffset: CGFloat = 8
         static let standardMargin: CGFloat = 20
-        static let blockHeight: CGFloat = 120
+        static let blockHeight: CGFloat = 200
         static let springDuration: CGFloat = 0.4
         static let springDamping: CGFloat = 0.7
         static let fadeInDuration: CGFloat = 0.3

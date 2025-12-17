@@ -10,11 +10,11 @@ class DependencyContainer {
     
     lazy var tmdbService: TMDBServiceProtocol = {
         return TMDBService()
-    }
+    }()
     
     lazy var imageService: TMDBImageService = {
         return TMDBImageService()
-    }
+    }()
     
     private init() {
         
@@ -25,18 +25,6 @@ class DependencyContainer {
     lazy var databaseManager: DatabaseManagerProtocol = {
         // For now, we release a compiler error
         fatalError("Database Manager not yet implemented")
-    }()
-    
-    lazy var tmdbService: TMDBServiceProtocol = {
-        fatalError("TMDB Service not yet implemented")
-    }()
-    
-    lazy var imageService: ImageServiceProtocol = {
-        fatalError("Image Service not yet implemented")
-    }()
-    
-    lazy var cacheManager: CacheManagerProtocol = {
-        fatalError("Cache Manager not yet implemented")
     }()
     
     // MARK: - Repositories
