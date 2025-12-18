@@ -16,6 +16,9 @@ class BlockView: UIView {
     private var episodeCode: String?
     private var releaseDate: Date?
     
+    private var isStack: Bool = false
+    private var stackCount: Int = 0
+    
     private static let dateFormatter: DateFormatter = {
         let df = DateFormatter()
         df.dateFormat = "MMM dd, yyyy"
@@ -82,6 +85,23 @@ class BlockView: UIView {
         return view
     }()
     
+    private lazy var stackBadgeView: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.systemBlue.withAlphaComponent(0.9)
+        view.layer.cornerRadius = 12
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.isHidden = true
+        return view
+    }()
+    
+    private lazy var stackBadgeLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 12, weight: .semibold)
+        label.textColor = .white
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
     // MARK: Init methods
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -108,9 +128,11 @@ class BlockView: UIView {
         contentStackView.addArrangedSubview(releaseDateLabel)
         contentStackView.addArrangedSubview(progressBarContainerView)
         
+        stackBadgeView.addSubview(stackBadgeLabel)
+        addSubview(stackBadgeView)
+        
         // MARK: Auto Layout constraints
         NSLayoutConstraint.activate([
-            self.heightAnchor.constraint(equalToConstant: AppConfiguration.UI.blockHeight),
             
             backgroundImageView.topAnchor.constraint(equalTo: topAnchor),
             backgroundImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
@@ -127,12 +149,21 @@ class BlockView: UIView {
             contentStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16),
             
             progressBarContainerView.heightAnchor.constraint(equalToConstant: 6),
-            progressBarContainerView.widthAnchor.constraint(equalTo: contentStackView.widthAnchor)
+            progressBarContainerView.widthAnchor.constraint(equalTo: contentStackView.widthAnchor),
+            
+            stackBadgeLabel.topAnchor.constraint(equalTo: stackBadgeView.topAnchor, constant: 4),
+            stackBadgeLabel.leadingAnchor.constraint(equalTo: stackBadgeView.leadingAnchor, constant: 8),
+            stackBadgeLabel.trailingAnchor.constraint(equalTo: stackBadgeView.trailingAnchor, constant: -8),
+            stackBadgeLabel.bottomAnchor.constraint(equalTo: stackBadgeView.bottomAnchor, constant: -4),
+            
+            stackBadgeView.topAnchor.constraint(equalTo: topAnchor, constant: 12),
+            stackBadgeView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
+            stackBadgeView.heightAnchor.constraint(equalToConstant: 24)
         ])
     }
     
-    // MARK: COnfiguration method
-    func configure(title: String?, overview: String?, posterPath: String?, progress: Double?, episodeCode: String?, releaseDate: Date?) {
+    // MARK: Configuration method
+    func configure(title: String?, overview: String?, posterPath: String?, progress: Double?, episodeCode: String?, releaseDate: Date?, isStack: Bool = false, stackCount: Int = 0) {
         self.mediaTitle = title
         self.mediaOverview = overview
         self.posterPath = posterPath
@@ -166,6 +197,18 @@ class BlockView: UIView {
         
         if let path = posterPath {
             // Logic for posterpath will go here once Kingfisher is setup
+        }
+        
+        self.isStack = isStack
+        self.stackCount = stackCount
+        
+        if isStack && stackCount > 1 {
+            stackBadgeView.isHidden = false
+            
+            let episodeText = stackCount == 1 ? "episode" : "episodes"
+            stackBadgeLabel.text = "\(stackCount) \(episodeText)"
+        } else {
+            stackBadgeView.isHidden = true
         }
     }
     

@@ -46,7 +46,7 @@ struct AppConfiguration {
     // MARK: UI Configuration
     struct UI {
         static let cornerRadius: CGFloat = 16
-        static let stackOffset: CGFloat = 8
+        static let stackOffset: CGFloat = 12
         static let standardMargin: CGFloat = 20
         static let blockHeight: CGFloat = 200
         static let springDuration: CGFloat = 0.4
